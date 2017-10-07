@@ -1,0 +1,44 @@
+{
+  "name": "unbiased-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack",
+    "watch": "webpack --progress --watch",
+    "open": "webpack-dev-server --open",
+    "start": "npm run watch | npm run open",
+    "build": "rimraf build && NODE_ENV=production webpack --env.prod=true",
+    "clean": "rimraf build build_dev",
+    "clean_dev": "rimraf build_dev",
+    "clean_build": "rimraf build"
+  },
+  "homepage": "https://f.id0.it/unbiased-test/",
+  "devDependencies": {
+    "buble": "^0.15.2",
+    "buble-loader": "^0.4.1",
+    "cache-loader": "^1.0.3",
+    "clean-css-loader": "^0.1.4",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^1.1.5",
+    "handlebars-loader": "^1.6.0",
+    "html-loader": "^0.5.1",
+    "image-webpack-loader": "^3.4.2",
+    "jquery-plugin": "0.0.0-ignored",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "postcss-loader": "^2.0.6",
+    "style-loader": "^0.18.2",
+    "thread-loader": "^1.1.1",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "debounce": "^1.0.2",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
+}

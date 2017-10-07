@@ -1,0 +1,26 @@
+// rem setup
+// 0.1rem == 1px
+// We could use 6.25% but Webkit has minimun font size value around 9-12px.
+html {
+  font-size: 62.5%; // 10px
+}
+
+body {
+  font-size: 140%; // 140% of 10px ~ 14px, understood by all browsers
+  font-size: 1.4rem; // 1.4 * 10px ~ 14px, understood by all major browsers and IE9+
+}
+
+@color_white: #fff;
+@color_black: #000;
+@color_background_light: #F5F5F5;
+@color_text_dark: rgb(36, 36, 36);
+@color_text_medium: rgb(77, 77, 77);
+@color_label: rgb(0, 123, 129);
+@color_border: rgb(217, 217, 217);
+@color_border_focus: #00747F;
+@color_tag_text: @color_text_medium;
+@color_tag_backgroud: #EDF6F8;
+
+.z_form(@z: 0) {
+  z-index: 100 + @z;
+}
